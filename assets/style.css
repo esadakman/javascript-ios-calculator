@@ -14,7 +14,7 @@
 } */
 
 .container {
-    height: 620px;
+    height: fit-content;
     width: 360px;
     background-color: var(--siyah);
     margin: 10px auto;
@@ -24,16 +24,34 @@
 
 }
 
-.ekran {
+.display {
     height: 180px;
     width: 340px;
-    /* background-color: #444; */
     margin: auto;
     font-size: 50px;
-    padding: 20px;
+    /* padding: 2rem 0; */
+    border: 1px solid red;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 1rem;
 }
 
-.tuslar {
+.display .bottom {
+    color: red;
+    border: 1px solid white;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.display .top {
+    border: 1px solid white;
+    margin: 2rem 1rem 0 0;
+}
+
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 72px);
     grid-template-rows: repeat(5, 72.5px);
@@ -56,7 +74,7 @@
     cursor: pointer;
 }
 
-.tuslar .box button {
+.buttons .box button {
     width: 72px;
     height: 72px;
     border-radius: 50%;
@@ -70,7 +88,7 @@
 
 }
 
-.container .tuslar .row5-1 button {
+.container .buttons .row5-1 button {
     width: 154px;
     border-radius: 55px;
     text-align: left;
