@@ -25,30 +25,40 @@
 }
 
 .display {
-    height: 180px;
+    height: 200px;
     width: 340px;
     margin: auto;
     font-size: 50px;
     /* padding: 2rem 0; */
     border: 1px solid red;
-    color: red;
+    color: white;
+    overflow: hidden;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    height: fit-content;
-    gap: 1rem;
+    border-radius: 30px;
+
 }
 
 .display .bottom {
-    color: red;
     border: 1px solid white;
     margin: 1rem 1rem 1rem 0;
+    overflow: hidden;
+    text-align: right;
+    width: 310px;
+    height: 4rem;
 }
 
 .display .top {
     border: 1px solid white;
     margin: 2rem 1rem 0 0;
+    overflow: hidden;
+    text-align: right;
+    width: 310px;
+    height: 4rem;
+    padding-bottom: 5;
 }
 
 .buttons {
@@ -62,19 +72,26 @@
 
 }
 
-.box button {
+.box {
     background-color: var(--tusbcgsayi);
     color: white;
     border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
 
 }
 
-.box button:hover {
+.box:hover {
     opacity: 0.5;
     cursor: pointer;
+
 }
 
-.buttons .box button {
+.buttons .box {
     width: 72px;
     height: 72px;
     border-radius: 50%;
@@ -88,7 +105,7 @@
 
 }
 
-.container .buttons .row5-1 button {
+.container .buttons .row5-1 {
     width: 154px;
     border-radius: 55px;
     text-align: left;
@@ -96,16 +113,16 @@
 
 }
 
-.row1-1 button,
-.row1-2 button,
-.row1-3 button {
+.row1-1,
+.row1-2,
+.row1-3 {
     background-color: var(--tusbcgop);
     color: black;
 }
 
-.row1-4 button,
-.row2-4 button,
-.row3-4 button,
-.row4-4 button {
+.row1-4,
+.row2-4,
+.row3-4,
+.row4-4 {
     background-color: var(--tusbcgsari);
 }
