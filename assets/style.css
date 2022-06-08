@@ -113,16 +113,22 @@
 
 }
 
-.row1-1,
-.row1-2,
-.row1-3 {
+.func {
     background-color: var(--tusbcgop);
     color: black;
 }
 
-.row1-4,
-.row2-4,
-.row3-4,
-.row4-4 {
+.row5-1 {
+    justify-content: left;
+}
+
+.ops {
     background-color: var(--tusbcgsari);
+}
+
+.ops:hover {
+    transition: all .3s ease-in-out;
+    opacity: .9;
+    background-color: white;
+    color: var(--tusbcgsari);
 }
