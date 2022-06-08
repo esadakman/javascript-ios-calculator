@@ -32,7 +32,14 @@ buttonsDiv.addEventListener("click", (e) => {
   } else if (e.target.classList.contains("%")) {
     bottomDisplay.innerHTML = parseFloat(bottomDisplay.innerHTML / 100);
   } else if (e.target.classList.contains(".")) {
-    addNumber(".");
+    let str = bottomDisplay.textContent;
+    if (str[str.length - 1] == ".") {
+      addNumber("");
+    } else if (str.length == 0) {
+      bottomDisplay.innerHTML = "0.";
+    } else {
+      addNumber(".");
+    }
   } else if (e.target.classList.contains("=")) {
     işlem();
     displayReset(topDisplay);
