@@ -66,12 +66,3 @@ function işlem() {
     );
   }
 }
-
-// function operation() {
-//   if (!bottomDisplay.innerHTML) {
-//     bottomDisplay.innerHTML = "";
-//   } else {
-//     topDisplay.innerHTML = bottomDisplay.innerHTML + " " + e.target.innerHTML;
-//     bottomDisplay.innerHTML = "";
-//   }
-// }
