@@ -8,8 +8,8 @@ let count = 0;
 let result = "";
 
 buttonsDiv.addEventListener("click", (e) => {
-  bottomDisplay.innerHTML = bottomDisplay.innerHTML.substr(0, 10);
-  topDisplay.innerHTML = topDisplay.innerHTML.substr(0, 10);
+  // bottomDisplay.innerHTML = bottomDisplay.innerHTML.substr(0, 10);
+  // topDisplay.innerHTML = topDisplay.innerHTML.substr(0, 10);
   if (e.target.classList.contains("AC")) {
     displayReset(bottomDisplay);
     displayReset(topDisplay);
@@ -27,14 +27,15 @@ buttonsDiv.addEventListener("click", (e) => {
       topDisplay.innerHTML = bottomDisplay.innerHTML + e.target.innerHTML;
       displayReset(bottomDisplay);
     }
-  } else if (e.target.classList.contains("%")) {
-    bottomDisplay.innerHTML = parseFloat(bottomDisplay.innerHTML / 100);
   } else if (e.target.classList.contains("nums")) {
     addNumber(e.target.innerHTML);
+  } else if (e.target.classList.contains("%")) {
+    bottomDisplay.innerHTML = parseFloat(bottomDisplay.innerHTML / 100);
   } else if (e.target.classList.contains(".")) {
     addNumber(".");
   } else if (e.target.classList.contains("=")) {
     işlem();
+    displayReset(topDisplay);
   }
 });
 
@@ -44,15 +45,6 @@ function addNumber(content) {
 
 function displayReset(variable) {
   variable.innerHTML = "";
-}
-
-function operation() {
-  if (!bottomDisplay.innerHTML) {
-    bottomDisplay.innerHTML = "";
-  } else {
-    topDisplay.innerHTML = bottomDisplay.innerHTML + " " + e.target.innerHTML;
-    bottomDisplay.innerHTML = "";
-  }
 }
 
 function işlem() {
@@ -74,3 +66,12 @@ function işlem() {
     );
   }
 }
+
+// function operation() {
+//   if (!bottomDisplay.innerHTML) {
+//     bottomDisplay.innerHTML = "";
+//   } else {
+//     topDisplay.innerHTML = bottomDisplay.innerHTML + " " + e.target.innerHTML;
+//     bottomDisplay.innerHTML = "";
+//   }
+// }

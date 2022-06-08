@@ -17,7 +17,7 @@
     height: fit-content;
     width: 360px;
     background-color: var(--siyah);
-    margin: 10px auto;
+    margin: 2rem auto;
     padding: 10px;
     border-radius: 30px;
     padding-bottom: 15px;
@@ -30,7 +30,7 @@
     margin: auto;
     font-size: 50px;
     /* padding: 2rem 0; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: white;
     overflow: hidden;
     display: flex;
@@ -42,24 +42,29 @@
 
 }
 
-.display .bottom {
-    border: 1px solid white;
+.bottom,
+.top {
+    /* border: 1px solid white; */
     margin: 1rem 1rem 1rem 0;
     overflow: hidden;
     text-align: right;
     width: 310px;
     height: 4rem;
+    font-size: 4rem;
+    padding-bottom: 4rem;
 }
 
-.display .top {
+/* .display .top {
     border: 1px solid white;
-    margin: 2rem 1rem 0 0;
+    margin: 1rem 1rem 0 0;
     overflow: hidden;
     text-align: right;
     width: 310px;
     height: 4rem;
-    padding-bottom: 5;
-}
+    padding-bottom: 4rem;
+    font-size: 4rem;
+
+} */
 
 .buttons {
     display: grid;
