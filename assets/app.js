@@ -24,6 +24,7 @@ buttonsDiv.addEventListener("click", (e) => {
     if (!bottomDisplay.innerHTML) {
       bottomDisplay.innerHTML = "";
     } else {
+      işlem();
       topDisplay.innerHTML = bottomDisplay.innerHTML + e.target.innerHTML;
       displayReset(bottomDisplay);
     }
