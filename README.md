@@ -17,7 +17,9 @@ Build a Calculator that is functionally similar to this: [Calculator]( https://c
 - improve coding skills within HTML & CSS & JS
 - use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
-You can reach my project from [here](https://esadakman.github.io/ios_calculator/)
+You can reach my project from [here](https://calcyto.netlify.app/)
+
+![calcy](https://user-images.githubusercontent.com/98649983/175832851-36755c86-6a4e-48b1-a37e-ae8728494022.gif)
 
 
 
